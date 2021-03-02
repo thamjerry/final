@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pubg Mobile</title>
+</head>
+<style>
+    h3 {
+        background-size: 50px;
+        text-align: left;
+        color: red;
+    }
+
+    body {
+        padding: 0px;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #container {
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .container>header {
+        background-image: url(img/pubg-mobile.jpg);
+        background-size: 100% 100%;
+        padding-bottom: 25%;
+        height: 0px;
+
+    }
+
+    .container>nav {
+        background-color: blue;
+        line-height: 40px;
+        color: white;
+        text-align: center;
+    }
+
+    #content {
+        width: 725px;
+        min-height: 300px;
+        border: 1px solid #CDCDCD;
+        float: left;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    #aside {
+        width: 250px;
+        height: 0 auto;
+        float: right;
+    }
+
+    #footer {
+        text-align: center;
+        background-color: rgb(107, 125, 228);
+        line-height: 60px;
+        border-top: 5px duoble white;
+        font-variant: small-caps;
+        clear: both;
+        height: 50px;
+
+    }
+
+    .container>nav>a {
+        color: white;
+        text-decoration: none;
+        margin: 0;
+
+    }
+
+    .container>nav>a:hover {
+        color: yellow;
+        text-decoration: underline;
+    }
+
+    .top-right {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        border-bottom-left-radius: 30px;
+        background-color: rgb(58, 58, 150);
+        box-shadow: 3px 3px 2px rgb(122, 122, 245);
+        height: 30px;
+        padding: 5px 10px 5px 20px;
+    }
+
+    .top-right a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-variant: unset;
+        font-weight: bolder;
+    }
+
+    .top-right a:hover {
+        color: lightgray;
+        text-shadow: 0 0 10px rgb(158, 136, 136);
+    }
+
+    .company-info {
+        position: relative;
+        left: 15px;
+        color: blue;
+        bottom: 5px;
+        top: 100px;
+        text-shadow: 0 0 10px lightgray;
+        font-variant: small-caps;
+        height: 50px;
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .menu>ul>li {
+        display: inline-block;
+    }
+
+    .menu>ul>li>a {
+        display: block;
+        text-decoration: none;
+        font-variant: small-caps;
+        font-size: larger;
+        color: white;
+        padding: 0 10px;
+        line-height: 40px;
+    }
+
+    .menu>ul {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        border-radius: 3px;
+        background-color: lightskyblue;
+        text-align: center;
+    }
+
+    .menu>ul>li>a:hover {
+        color: rgb(5, 5, 121);
+    }
+
+    .menu ul ul {
+        position: absolute;
+        display: none;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        border-radius: 3px;
+        width: 200px;
+        background-color: white;
+        box-shadow: 0 0 3px gray;
+    }
+
+    .menu ul ul a {
+        display: block;
+        line-height: 30px;
+        color: lightlight;
+        text-decoration: none;
+        font-variant: small-caps;
+        font-size: larger;
+        padding: 0 10px;
+        border-bottom: 1px dotted blue;
+    }
+
+    .menu>ul>li:hover>ul {
+        display: block;
+        z-index: 1;
+    }
+
+    .menu ul ul a:hover {
+        background-color: rgb(126, 126, 247);
+        color: white;
+    }
+
+    .company-info>h1 {
+        color: black;
+        border-bottom: 5px solid white;
+        width: 300px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .company-info>p {
+        color: blue;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="company-info ">
+                <h1>PUBG Mobile</h1>
+                <p>PLAYERUNKNOWN'S BATTLEGROUNDS</p>
+            </div>
+            <div class="top-right">
+                <a href="#">Đăng nhập</a> |
+                <a href="#">Đăng kí</a> |
+                <a href="#">Quên mật khẩu</a> |
+            </div>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="trang_chu.html">Trang chủ</a></li>
+                <li>
+                    <a href="#">Giới thiệu</a>
+                </li>
+                <li><a href="#">Sản phẩm </a>
+                    <ul>
+                        <li><a href="mobile.html">Mobile</a></li>
+                        <li><a href="pc.html">PC</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Giải đấu</a></li>
+                <li><a href="#">Sự kiện</a></li>
+            </ul>
+        </nav>
+        <article>
+        <div id="form">
+            <main>
+                <h3>Đăng kí</h3>
+                <div class="form-group"></div>
+                        <label>Tên đăng nhập:</label> </br>
+                        <input name="usename" type="text" class="form-control"> </br>
+                <lable>Họ và tên:</lable> <br>
+                <input class="form-control" type="text"/> </label> </br>
+            </div>
+            <div class="form-group">
+                <label>Giới tính:</label> <br> 
+            <label><input type="radio" name="gender"/>Nam </label>
+            <label><input type="radio" name="gender"/> Nữ  </label> </br>
+            <div>
+            <label>Ngày sinh</label>
+                <input type="date"/>
+            </div>
+            <button type="submit">Login</button> <br> 
+        </main>
+        </article>
+        <div id="footer">© VNG 2016. Công Ty Cổ Phần VNG</div>
+    </div>
+</body>
+
+</html>
